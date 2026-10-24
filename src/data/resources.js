@@ -321,16 +321,19 @@ const grade4 = {
                 { id: 'g4-u3-p3', title: { en: 'Fill the gap poster', ar: 'بوستر أكمل الفراغ' }, type: 'image', file: `${R}/unit-3/posters/unit-3-fill-the-gap-poster.jpg` },
                 { id: 'g4-u3-p4', title: { en: 'Learning prepositions with Timmy the cat', ar: 'تعلم حروف الجر مع القط تيمي' }, type: 'image', file: `${R}/unit-3/posters/unit-3-prepositions-poster.jpg` },
                 { id: 'g4-u3-p5', title: { en: 'Who owns it? Subject pronouns & possessive adjectives', ar: 'لمن هذا؟ الضمائر الفاعلة والملكية' }, type: 'image', file: `${R}/unit-3/posters/unit-3-who-owns-it-poster.jpg` },
+                { id: 'g4-u3-p6', title: { en: 'Prepositions worksheet — match & draw', ar: 'ورقة عمل حروف الجر — طابق وارسم' }, type: 'image', file: `${R}/unit-3/posters/unit-3-prepositions-worksheet-poster.png` },
               ],
             },
             {
               id: 'videos',
               name: { en: 'Videos', ar: 'فيديوهات' },
-              description: { en: '"Where\'s my bag?" and a room search video.', ar: 'فيديو "أين حقيبتي؟" وفيديو البحث في الغرفة.' },
+              description: { en: 'Lesson videos: bedroom, room search, room vocabulary and prepositions.', ar: 'فيديوهات الدرس: غرفة النوم، والبحث في الغرفة، ومفردات الغرفة، وحروف الجر.' },
               icon: 'Clapperboard',
               items: [
                 { id: 'g4-u3-v1', title: { en: 'Where\'s my bag? — bedroom lesson video', ar: 'أين حقيبتي؟ — فيديو درس غرفة النوم' }, type: 'video', file: `${R}/unit-3/videos/unit-3-wheres-my-bag-video.mp4`, thumbnail: `${R}/unit-3/videos/unit-3-wheres-my-bag-video-thumb.jpg`, duration: '0:47' },
                 { id: 'g4-u3-v2', title: { en: 'Room search — find the object', ar: 'ابحث في الغرفة — أوجد الغرض' }, type: 'video', file: `${R}/unit-3/videos/unit-3-room-search-video.mp4`, thumbnail: `${R}/unit-3/videos/unit-3-room-search-video-thumb.jpg`, duration: '0:58' },
+                { id: 'g4-u3-v3', title: { en: 'Room vocabulary — cupboard, drawer, lamp, shelf & bin', ar: 'مفردات الغرفة — الخزانة والدرج والمصباح والرف وسلة المهملات' }, type: 'video', file: `${R}/unit-3/videos/unit-3-room-vocabulary-video.mp4`, thumbnail: `${R}/unit-3/videos/unit-3-room-vocabulary-video-thumb.jpg`, duration: '0:10' },
+                { id: 'g4-u3-v4', title: { en: 'Prepositions — where is the ball?', ar: 'حروف الجر — أين الكرة؟' }, type: 'video', file: `${R}/unit-3/videos/unit-3-prepositions-ball-video.mp4`, thumbnail: `${R}/unit-3/videos/unit-3-prepositions-ball-video-thumb.jpg`, duration: '0:40' },
               ],
             },
           ],
@@ -377,11 +380,54 @@ const grade6 = emptyGrade('grade-6', 6,
   { en: 'Paragraph writing, past and future tenses, longer reading passages and real conversations about ideas.', ar: 'كتابة الفقرات، الأزمنة الماضية والمستقبلية، نصوص قراءة أطول، ومحادثات حقيقية حول الأفكار.' },
   'green')
 
+// ── Grade 7 ───────────────────────────────────────────────────
+const R7 = '/resources/grade-7/semester-1'
+
 const grade7 = emptyGrade('grade-7', 7,
   { en: 'Grade 7', ar: 'الصف السابع' },
   { en: 'Thinking, arguing and telling stories in English.', ar: 'التفكير والنقاش ورواية القصص بالإنجليزية.' },
   { en: 'Essay structure, reported speech, richer vocabulary and reading real texts — news, letters and short fiction.', ar: 'بنية المقال، الكلام المنقول، مفردات أغنى، وقراءة نصوص حقيقية — أخبار ورسائل وقصص قصيرة.' },
   'blue')
+
+// Unit 3 of Grade 7 · Semester 1  (replaces the empty `children: []` of semester-1)
+grade7.children[0].description = { en: 'Materials for the first semester — Unit 3: Animal Language.', ar: 'مواد الفصل الأول — الوحدة الثالثة: لغة الحيوانات.' }
+grade7.children[0].children = [
+  {
+    id: 'unit-3',
+    name: { en: 'Unit 3 — Animal Language', ar: 'الوحدة الثالثة — لغة الحيوانات' },
+    description: { en: 'How animals communicate: sounds, body movements and signs.', ar: 'كيف تتواصل الحيوانات: الأصوات وحركات الجسم والإشارات.' },
+    icon: 'Sparkles',
+    children: [
+      {
+        id: 'videos',
+        name: { en: 'Videos', ar: 'فيديوهات' },
+        description: { en: 'Story and lesson videos about animal language.', ar: 'فيديوهات قصة ودرس عن لغة الحيوانات.' },
+        icon: 'Clapperboard',
+        items: [
+          { id: 'g7-u3-v1', title: { en: 'Animal Magic — Unit 3 story video', ar: 'فيديو Animal Magic — قصة الوحدة الثالثة' }, type: 'video', file: `${R7}/unit-3/videos/unit-3-animal-magic.mp4`, thumbnail: `${R7}/unit-3/videos/unit-3-animal-magic-thumb.jpg`, duration: '2:09' },
+          { id: 'g7-u3-v2', title: { en: 'Animal language — sounds, movements and signs', ar: 'فيديو لغة الحيوانات — الأصوات والحركات والإشارات' }, type: 'video', file: `${R7}/unit-3/videos/unit-3-animal-language.mp4`, thumbnail: `${R7}/unit-3/videos/unit-3-animal-language-thumb.jpg`, duration: '2:02' },
+          { id: 'g7-u3-v3', title: { en: 'The dog dialogue — \"I think it\'s angry!\"', ar: 'فيديو حوار الكلب — \"أظنه غاضباً!\"' }, type: 'video', file: `${R7}/unit-3/videos/unit-3-dog-dialogue.mp4`, thumbnail: `${R7}/unit-3/videos/unit-3-dog-dialogue-thumb.jpg`, duration: '1:10' },
+        ],
+      },
+      {
+        id: 'posters',
+        name: { en: 'Posters', ar: 'بوسترات' },
+        description: { en: 'Unit 3 summary poster: Animal language.', ar: 'بوستر ملخص الوحدة الثالثة: لغة الحيوانات.' },
+        icon: 'Image',
+        items: [
+          {
+            id: 'g7-u3-p1',
+            title: { en: 'Animal language — Unit 3 summary poster', ar: 'بوستر لغة الحيوانات — ملخص الوحدة الثالثة' },
+            type: 'image',
+            file: `${R7}/unit-3/posters/unit-3-animal-language-poster.jpg`,
+            // the poster is wide, so the (tall) card shows a portrait cover that contains the poster itself
+            thumbnail: `${R7}/unit-3/posters/unit-3-animal-language-poster-thumb.jpg`,
+          },
+        ],
+      },
+    ],
+  },
+]
 
 export const grades = [grade4, grade6, grade7]
 
