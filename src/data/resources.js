@@ -380,6 +380,47 @@ const grade6 = emptyGrade('grade-6', 6,
   { en: 'Paragraph writing, past and future tenses, longer reading passages and real conversations about ideas.', ar: 'كتابة الفقرات، الأزمنة الماضية والمستقبلية، نصوص قراءة أطول، ومحادثات حقيقية حول الأفكار.' },
   'green')
 
+// Units 3 & 4 of Grade 6 · Semester 1  (replaces the empty `children: []` of semester-1)
+const R6 = '/resources/grade-6/semester-1'
+
+grade6.children[0].description = { en: 'English for Palestine 6A — Unit 3: Summer Adventures and Unit 4: Films I Like.', ar: 'English for Palestine 6A — الوحدة الثالثة: مغامرات الصيف، والوحدة الرابعة: أفلام أحبها.' }
+grade6.children[0].children = [
+  {
+    id: 'unit-3',
+    name: { en: 'Unit 3 — Summer Adventures', ar: 'الوحدة الثالثة — مغامرات الصيف' },
+    description: { en: 'Telling stories about summer holidays: past continuous & past simple, with dates.', ar: 'الحديث عن مغامرات العطلة الصيفية: الماضي المستمر والماضي البسيط مع التواريخ.' },
+    icon: 'Sparkles',
+    children: [
+      {
+        id: 'videos',
+        name: { en: 'Videos', ar: 'فيديوهات' },
+        description: { en: 'Lesson video: summer adventures told with the past continuous.', ar: 'فيديو الدرس: مغامرات الصيف بالماضي المستمر.' },
+        icon: 'Clapperboard',
+        items: [
+          { id: 'g6-u3-v1', title: { en: 'Summer Adventures — Unit 3 lesson video', ar: 'فيديو مغامرات الصيف — درس الوحدة الثالثة' }, description: { en: 'Amy, Omar and friends talk about their summer adventures: \"We were going down the river when the boat turned over.\"', ar: 'إيمي وعمر وأصدقاؤهم يتحدثون عن مغامراتهم في الصيف باستخدام الماضي المستمر والبسيط.' }, type: 'video', file: `${R6}/unit-3/videos/unit-3-summer-adventures.mp4`, thumbnail: `${R6}/unit-3/videos/unit-3-summer-adventures-thumb.jpg`, duration: '2:23' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'unit-4',
+    name: { en: 'Unit 4 — Films I Like', ar: 'الوحدة الرابعة — أفلام أحبها' },
+    description: { en: 'Talking about films and cartoons we watched: when / while with the past continuous.', ar: 'الحديث عن الأفلام والكرتون التي شاهدناها: when / while مع الماضي المستمر.' },
+    icon: 'Video',
+    children: [
+      {
+        id: 'videos',
+        name: { en: 'Videos', ar: 'فيديوهات' },
+        description: { en: 'Lesson video: films I like, with when / while sentences.', ar: 'فيديو الدرس: أفلام أحبها، مع جمل when / while.' },
+        icon: 'Clapperboard',
+        items: [
+          { id: 'g6-u4-v1', title: { en: 'Films I Like — Unit 4 lesson video', ar: 'فيديو أفلام أحبها — درس الوحدة الرابعة' }, description: { en: 'Children tell each other about films: a dog chasing a cat, a dolphin rescuing a diver, a tiger and an ox.', ar: 'أطفال يحكون لبعضهم عن أفلام شاهدوها: كلب يطارد قطة، دولفين ينقذ غواصاً، نمر وثور.' }, type: 'video', file: `${R6}/unit-4/videos/unit-4-films-i-like.mp4`, thumbnail: `${R6}/unit-4/videos/unit-4-films-i-like-thumb.jpg`, duration: '2:22' },
+        ],
+      },
+    ],
+  },
+]
+
 // ── Grade 7 ───────────────────────────────────────────────────
 const R7 = '/resources/grade-7/semester-1'
 
