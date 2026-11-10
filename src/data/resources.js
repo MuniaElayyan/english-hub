@@ -338,6 +338,59 @@ const grade4 = {
             },
           ],
         },
+        {
+          id: 'unit-4',
+          name: { en: 'Unit 4 — Shopping list', ar: 'الوحدة الرابعة — قائمة التسوق' },
+          description: { en: 'Shopping dialogues, quantities and numbers.', ar: 'حوارات التسوق والكميات والأعداد.' },
+          icon: 'ShoppingCart',
+          children: [
+            {
+              id: 'videos',
+              name: { en: 'Videos', ar: 'فيديوهات' },
+              description: { en: 'Shopping lesson videos: the shopping list and Periods 2–3.', ar: 'فيديوهات درس التسوق: قائمة التسوق والحصتان 2–3.' },
+              icon: 'Clapperboard',
+              items: [
+                { id: 'g4-u4-v1', title: { en: 'Shopping list — lesson video', ar: 'قائمة التسوق — فيديو الدرس' }, type: 'video', file: `${R}/unit-4/videos/unit-4-shopping-list-video.mp4`, thumbnail: `${R}/unit-4/videos/unit-4-shopping-list-video-thumb.jpg`, duration: '0:56' },
+                { id: 'g4-u4-v2', title: { en: 'Unit 4 — Periods 2 & 3 video', ar: 'الوحدة الرابعة — فيديو الحصتين 2 و3' }, type: 'video', file: `${R}/unit-4/videos/unit-4-periods-2-3-video.mp4`, thumbnail: `${R}/unit-4/videos/unit-4-periods-2-3-video-thumb.jpg`, duration: '0:58' },
+              ],
+            },
+            {
+              id: 'posters',
+              name: { en: 'Posters', ar: 'بوسترات' },
+              description: { en: 'Number words and formula cards poster.', ar: 'بوستر الأعداد وبطاقات المعادلات.' },
+              icon: 'Image',
+              items: [
+                { id: 'g4-u4-p1', title: { en: 'Math Formula Card Hunt — numbers poster', ar: 'بوستر صيد بطاقات المعادلات — الأعداد' }, type: 'image', file: `${R}/unit-4/posters/unit-4-math-formula-card-hunt-poster.jpg` },
+              ],
+            },
+            {
+              id: 'games',
+              name: { en: 'Interactive Games', ar: 'ألعاب تفاعلية' },
+              description: { en: 'Games to practise the unit vocabulary.', ar: 'ألعاب للتدريب على مفردات الوحدة.' },
+              icon: 'Gamepad2',
+              items: [
+                { id: 'g4-u4-game-shopping', title: { en: 'Interactive game: Shopping list', ar: 'لعبة تفاعلية: قائمة التسوق' }, description: { en: 'Wordwall game — play here or open on Wordwall.', ar: 'لعبة Wordwall — العب هنا أو افتحها على Wordwall.' }, type: 'wordwall', url: 'https://wordwall.net/resource/122235357/shopping-list', thumbnail: `${R}/unit-4/games/unit-4-shopping-list-game-thumb.jpg` },
+              ],
+            },
+            {
+              id: 'presentation',
+              name: { en: 'Presentation', ar: 'العرض التقديمي' },
+              description: { en: 'The Unit 4 presentation on Canva — open it in class.', ar: 'عرض الوحدة الرابعة التقديمي على Canva — لعرضه داخل الصف.' },
+              icon: 'Presentation',
+              items: [
+                {
+                  id: 'g4-u4-presentation-canva',
+                  title: { en: 'Unit 4 — Shopping list: Canva presentation', ar: 'الوحدة الرابعة — قائمة التسوق: عرض تقديمي على Canva' },
+                  description: { en: 'Opens the presentation on Canva in a new tab.', ar: 'يفتح العرض التقديمي على Canva في تبويب جديد.' },
+                  type: 'link',
+                  url: 'https://www.canva.com/design/DAHY7is0b14/VwMKOV3QpNjvKKEG_zJr5g/edit',
+                  thumbnail: `${R}/unit-4/presentation/unit-4-canva-presentation-thumb.jpg`,
+                  badge: { en: 'Canva', ar: 'Canva' },
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
